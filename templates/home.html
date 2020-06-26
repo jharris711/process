@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load cloudinary %}
+{% block content %}
+
+
+<div>
+    <h1>Django-Heroku</h1>
+    {% for test in tests %}
+        <h4>{{test.id}}: {{test.string}}</h4>
+    {% endfor %}
+</div>
+
+
+{% endblock content %}
